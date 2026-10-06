@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gold Services — Propuestas de logo</title>
+<meta name="description" content="Tres direcciones de identidad para Gold Services, seguros para camiones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-count"><span id="count">0</span>%</div>
+  <div class="loader-line"><i></i></div>
+</div>
+
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<div class="toast" role="status"></div>
+
+<header class="navbar">
+  <a class="brand" href="#top">GOLD<span>SERVICES</span></a>
+  <nav>
+    <a href="#about">Marca</a>
+    <a href="#proposals">Propuestas</a>
+  </nav>
+</header>
+
+<a class="scroll-circle" href="#about" aria-label="Siguiente sección">
+  <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" class="ring-bg"/><circle cx="40" cy="40" r="38" class="ring" id="ring"/></svg>
+  <span class="scroll-arrow">↓</span>
+  <span class="scroll-number" id="scrollNum">00</span>
+</a>
+
+<main id="top">
+  <section class="hero" data-color="#c9a227" data-num="00">
+    <div class="glow g1"></div><div class="glow g2"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Seguros para camiones</p>
+      <h1 class="split"><span class="line">GOLD</span><span class="line outline">SERVICES</span></h1>
+      <p class="hero-description">Protección pensada para cada kilómetro de tu viaje.</p>
+    </div>
+    <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+      <defs><path id="circ" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+      <text><textPath href="#circ">TRES PROPUESTAS • UNA IDENTIDAD • TRES PROPUESTAS • UNA IDENTIDAD •</textPath></text>
+      <text x="100" y="118" text-anchor="middle" class="badge-3">3</text>
+    </svg>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Confianza</span><span>Protección</span><span>Carretera</span><span>Respaldo</span><span>Fuerza</span>
+      <span>Confianza</span><span>Protección</span><span>Carretera</span><span>Respaldo</span><span>Fuerza</span>
+    </div>
+  </div>
+
+  <section class="about" id="about" data-color="#c9a227" data-num="01">
+    <div class="section-number">01</div>
+    <div class="about-content reveal">
+      <p class="eyebrow">La marca</p>
+      <h2>Confianza<br><em>en cada milla.</em></h2>
+      <p>Gold Services ofrece soluciones de seguros para la industria del transporte, combinando protección, respaldo y tranquilidad.</p>
+    </div>
+  </section>
+
+  <section class="proposals" id="proposals">
+    <div class="section-number">02</div>
+    <div class="proposals-content">
+      <p class="eyebrow">Propuestas de logo</p>
+      <h2 class="reveal">Tres direcciones.<br><em>Una identidad.</em></h2>
+      <div class="proposal-navigation">
+        <a href="#proposal-01">01</a><a href="#proposal-02">02</a><a href="#proposal-03">03</a>
+      </div>
+      <!-- Las propuestas se generan desde script.js (arreglo PROPOSALS) -->
+      <div id="proposal-list"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Gold Services <span>© 2026</span></p>
+  <a href="#top">Volver arriba ↑</a>
+</footer>
+
+<div class="lightbox" aria-hidden="true"><img alt=""><button aria-label="Cerrar">✕</button></div>
+
+<script src="script.js"></script>
+</body>
+</html>
